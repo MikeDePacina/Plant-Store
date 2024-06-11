@@ -1,0 +1,6 @@
+<h1>Plants</h1>
+@for(plant of plants; track plant.name){
+<app-plant-card [plant]="plant"></app-plant-card>
+}@empty {
+<p>No plants found</p>
+}
